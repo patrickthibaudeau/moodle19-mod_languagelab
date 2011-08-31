@@ -36,8 +36,8 @@ class mod_languagelab_mod_form extends moodleform_mod {
         $mform->addElement('static','master_track_file',get_string('master_track_file','languagelab'),'');
         
         $mform->addElement('advcheckbox','attempts',get_string('attempts','languagelab'),null);
-        //$mform->addElement('text','recording_timelimit',get_string('recording_timelimit','languagelab'));
-        //$mform->setDefault('recording_timelimit', 0);
+        $mform->addElement('text','recording_timelimit',get_string('recording_timelimit','languagelab'));
+        $mform->setDefault('recording_timelimit', 0);
 
         $mform->addElement('header','general',get_string('advanced','languagelab'));
         $mform->addElement('checkbox','video',get_string('use_video','languagelab'));
